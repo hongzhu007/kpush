@@ -424,9 +424,7 @@ public class PushService extends Service {
         notification.flags |= Notification.FLAG_AUTO_CANCEL;
 
         //添加声音
-        notification.defaults |=Notification.DEFAULT_SOUND;
-        // 添加振动
-        notification.defaults |= Notification.DEFAULT_VIBRATE;
+        notification.defaults |= Notification.DEFAULT_ALL;
 
         //用mNotificationManager的notify方法通知用户生成标题栏消息通知
         // 固定用0，这样就不会显示很多通知了
